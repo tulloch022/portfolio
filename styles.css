@@ -1,0 +1,100 @@
+html {
+    background-color: rgba(210, 232, 255, 0.726);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Slabo 27px', serif;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
+}
+
+li {
+    padding: 10px;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-image: url("nathaniel-krum-5ttn1OQvBus-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-color: black;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.introduction {
+    border-style: solid;
+    border-bottom-color: black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("nathaniel-krum-5ttn1OQvBus-unsplash.jpg");
+    background-position: center;
+    background-blend-mode: lighten;
+    height: 400px;
+    margin-top: 10px;
+    box-shadow: -10px 10px;
+}
+
+.hello {
+    font-size: 2rem;
+    font-family: 'Slabo 27px', serif;
+    text-shadow: 2px 2px pink;
+    padding-left: 50px;
+    background-color: white;
+    width: auto;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+
+.projects {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-style: solid;
+    border-bottom-color: black;
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+    background-image: url("imat-bagja-gumilar-jwTvCQQJXh0-unsplash.jpg");
+    text-shadow: 1px 1px white;
+}
+
+#description {
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+
+.contact {
+    margin-top: 100px;
+}
