@@ -26,7 +26,7 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -107,6 +107,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+}
+
+.logo {
+    top: 0;
 }
 
 .nav {
@@ -236,7 +240,6 @@ header {
 
 .my-skills {
     background-color: var(--clr-dark);
-    background-image: url();
     color: var(--clr-light);
     text-align: center;
     max-width: 1000px;
@@ -259,9 +262,21 @@ header {
 
 i {
     font-size: 3em;
-    padding: 1rem;
+    padding-right: 1rem;
 }
 
+@media (min-width: 600px) {
+    i:hover {
+        font-size: 4em;
+    }
+    .my-skills {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .my-skills {height: 25rem;}
+}
 
 /* About me */
 
