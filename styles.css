@@ -1,134 +1,115 @@
-html {
-    background-color: rgba(210, 232, 255, 0.726);
-    padding-left: 100px;
-    padding-right: 100px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root {
+    --ff-primary: 'Slabo 27px', serif;
+    --ff-secondary: 'Lato', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #F0F7FF;
+    --clr-dark: #526980;
+    --clr-accent: #A3D1FF;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
 }
 
 
-.header {
-    display: flex;
-    justify-content: flex-end;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Slabo 27px', serif;
-}
-
-ul {
-    list-style-type: none;
-    float: right;
-    display: flex;
-}
-
-li {
-    padding: 10px;
-    margin: 20px;
-    border-style: solid;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    background-image: url("nathaniel-krum-5ttn1OQvBus-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border-color: black;
-    color: white;
-    text-shadow: 3px 3px black;
-}
-
-.introduction {
-    border-style: solid;
-    border-bottom-color: black;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("nathaniel-krum-5ttn1OQvBus-unsplash.jpg");
-    background-position: center;
-    background-blend-mode: lighten;
-    height: 400px;
-    margin-top: 10px;
-    box-shadow: -10px 10px;
-}
-
-.hello {
-    font-size: 2rem;
-    font-family: 'Slabo 27px', serif;
-    text-shadow: 2px 2px pink;
-    padding-left: 50px;
-    background-color: rgba(255, 255, 255, 0.521);
-    width: auto;
-}
-
-.container {
-    padding-top: 20px;
-}
-
-
-.projects {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.project {
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-position: right;
-    border-style: solid;
-    border-bottom-color: black;
-    border-radius: 15px;
-    height: 350px;
-    width: 200px;
-    background-image: url("imat-bagja-gumilar-jwTvCQQJXh0-unsplash.jpg");
-    text-shadow: 1px 1px white;
-}
-
-#description {
-    padding: 20px;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.616);
-}
-
-
-.contact {
-    margin-top: 100px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .introduction {
-        height: 200px;
-        box-shadow: none;
-        margin: 0 auto;
-        width: 100%;
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
     }
-    .hello {
-        font-size: 1rem;
-    }
-    .projects {
-        display: block;
-    }
-    .project {
-        margin: 0 auto;
-        width: 100%;
-    }
-    ul {
-        margin: 0 auto;
-    }
-    .header {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-    }
-    li {
-        width: 100px;
-        text-align: center;
-        margin: 0;
-        padding: 0;
+}
+
+
+
+/* General Styles */
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1);}
+
+h2 {font-size: var(--fs-h2);}
+
+h3 {font-size: var(--fs-h3);}
+
+
+.section__title {
+    margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+
+/* Intro section */
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
     }
 }
