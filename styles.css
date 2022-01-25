@@ -133,7 +133,7 @@ header {
     z-index: 100;
     transform: translateY(-100%);
     opacity: 0;
-    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition: transform 250ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 
