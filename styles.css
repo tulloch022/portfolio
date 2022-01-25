@@ -39,6 +39,12 @@
 
 /* General Styles */
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -99,6 +105,10 @@ h3 {font-size: var(--fs-h3);}
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
     padding: .5em;
+}
+
+.logo {
+    color: black;
 }
 
 
@@ -164,7 +174,23 @@ header {
 
 
 .nav-open .nav {
-    transform: translatex(0%);
+    transform: translatex(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translatex(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 
@@ -176,7 +202,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: black;
     width: 2em;
     height: 3px;
     border-radius: 1em;
