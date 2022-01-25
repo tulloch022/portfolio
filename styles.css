@@ -217,6 +217,7 @@ header {
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+        padding-top: 5em;
     }
     .intro__img {
         grid-area: img;
