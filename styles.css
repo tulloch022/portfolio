@@ -289,7 +289,7 @@ header {
 
 i {
     font-size: 3em;
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -349,4 +349,15 @@ i {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+/* Footer */
+
+
+footer {
+    margin-top: 5em;
+    background: black;
+    text-align: center;
 }
