@@ -288,7 +288,7 @@ header {
     background: var(--clr-light);
 }
 
-i {
+.skill {
     font-size: 3em;
     padding: 1rem;
     transition: font-size 1s ease;
@@ -360,8 +360,38 @@ i {
 /* Footer */
 
 
-footer {
+.footer {
     margin-top: 5em;
     background: black;
+    color: var(--clr-accent);
     text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-list__item {
+    padding: .5rem;
+    transition: font-size .5s ease;
+}
+
+.social-list__item:hover {
+    font-size: 2em;
+}
+
+
+.social-list__item:hover,
+.footer a:hover {
+    opacity: 0.6;
 }
