@@ -131,8 +131,9 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
+    transform: translateY(-100%);
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 
@@ -174,6 +175,7 @@ header {
 
 
 .nav-open .nav {
+    transform: translateY(0%);
     opacity: 100%;
 }
 
