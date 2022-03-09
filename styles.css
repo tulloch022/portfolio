@@ -64,11 +64,6 @@ img {
     max-width: 100%;
 }
 
-.portfolio__img {
-    margin-top: 2rem;
-    width: 50%;
-}
-
 
 /* Typography */
 
@@ -357,8 +352,19 @@ header {
 
 
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.portfolio__img {
+    margin: 0 auto;
+    position: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.portfolio p {
+    position: center;
 }
 
 
