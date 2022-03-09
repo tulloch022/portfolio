@@ -64,6 +64,11 @@ img {
     max-width: 100%;
 }
 
+.portfolio__img {
+    margin-top: 2rem;
+    width: 50%;
+}
+
 
 /* Typography */
 
