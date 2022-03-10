@@ -352,7 +352,7 @@ header {
 
 
 .portfolio {
-
+    line-height: 1.3rem;
 }
 
 .portfolio__img {
@@ -365,6 +365,9 @@ header {
 
 .portfolio p {
     position: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 
